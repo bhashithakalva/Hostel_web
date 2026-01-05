@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="header">Student Dashboard</div>
+
+<div class="container">
+
+    <p><b>Food Ready:</b> {{ food }}</p>
+    <p><b>Today's Menu:</b> {{ items }}</p>
+
+    <hr>
+
+    <div class="section-title">Attendance</div>
+    <button>Mark Attendance</button>
+
+    <div class="section-title">Raise a Complaint</div>
+    <textarea placeholder="Enter your complaint"></textarea>
+    <button>Submit Complaint</button>
+
+    <br><br>
+
+    <a href="/logout">
+        <button class="logout-btn" type="button">Logout</button>
+    </a>
+
+</div>
+
+</body>
+</html>

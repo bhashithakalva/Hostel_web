@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+</div>
+<body>
+    <h1>Staff Dashboard</h1>
+    <div class="container"></div>
+    <p style="color: green;"><strong>{{ message }}</strong></p>
+
+    <form method="post">
+        <label>Food Ready?</label><br><br>
+        <input type="text" name="food" placeholder="Yes / No" required>
+        <br><br>
+
+        <label>Today's Food Items</label><br><br>
+        <input type="text" name="items" placeholder="Rice, Dal, Curry" required>
+        <br><br>
+
+        <button type="submit">Update Food</button>
+    </form>
+</body>
+</html>
